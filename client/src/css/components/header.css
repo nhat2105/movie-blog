@@ -1,6 +1,5 @@
 .header{
     background-image: url("../../assets/images/components/cinema_logo.jpg");
-    position: fixed;
     width: 100%;
     z-index: 99;
     transition: 0.3 ease;
@@ -13,13 +12,13 @@
 
 
 .header_logo{
-    width: 80%;
-    height: 150px;
+    width: 50%;
+    height: 120px;
     display: flex;
 
     .logo_img{
-        width: 60%;
-        height: 140px;
+        width: 50%;
+        height: 120px;
         margin-left: 100px;
         display: inline-block;
     
@@ -30,14 +29,17 @@
     display: flex;
     align-items: center;
     margin-right: 600px;
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center; 
+    
 }
 
 .header_menu_item{
     margin-left: 60px;
-
+    font-weight: 900;
     font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 

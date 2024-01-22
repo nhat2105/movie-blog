@@ -14,7 +14,7 @@ const Layout = () => {
                 <Header/>
                     <div className='container'>
                         <div className='main'>
-                        <   Routes/>
+                        <Routes/>
                         </div>
                     </div>
                 <Footer/>

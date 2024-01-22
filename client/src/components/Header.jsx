@@ -6,17 +6,17 @@ import logo from '../assets/images/components/logo.jpg'
 
 const mainNav = [
     {
-        display: 'Home',
+        display: 'HOME',
         path: '/'
     },
     
     {
-        display: 'Posts',
+        display: 'POSTS',
         path: '/catalog'
     },
     
     {
-        display: 'About',
+        display: 'ABOUT',
         path: '/about'
     }
 ]
@@ -35,7 +35,7 @@ const Header = () => {
                 mainNav.map((item, index) => (
                     <div className="header_menu_item" key = {index}>
                         <Link to={item.path}>
-                            <span>{item.display}</span>
+                            <span style ={{color: "white"}}>{item.display}</span>
                         </Link>
                     </div>
                 ))
