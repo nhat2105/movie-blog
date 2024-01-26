@@ -45,7 +45,7 @@ const Footer = () => {
           <div className='footer-content'>
             {footerAboutLinks.map((item, index) => (
               <p key={index}>
-                <Link to={item.path}>{item.display}</Link>
+                <Link style={{color:'white'}} to={item.path}>{item.display}</Link>
               </p>
             ))}
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
           <div className='footer-content'>
             {footerRecommendLinks.map((item, index) => (
               <p key={index}>
-                <Link to={item.path}>{item.display}</Link>
+                <Link style={{color:'white'}} to={item.path}>{item.display}</Link>
               </p>
             ))}
           </div>

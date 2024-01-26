@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Movie = () => {
+const List = () => {
   return (
     <div>
-      Movie
+      Catalog
     </div>
   )
 }
 
-export default Movie
+export default List

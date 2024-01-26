@@ -1,0 +1,16 @@
+.main-container{
+    justify-content: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.main_bg_img{
+    margin-left: 433px;
+}
+.main-intro-desc{
+    align-items: right;
+    margin-right: 0px;
+    position: absolute;
+    font-size: 90px;
+    text-align: center;
+}

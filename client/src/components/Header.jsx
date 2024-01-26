@@ -11,8 +11,8 @@ const mainNav = [
     },
     
     {
-        display: 'POSTS',
-        path: '/catalog'
+        display: 'LISTS',
+        path: '/lists'
     },
     
     {
