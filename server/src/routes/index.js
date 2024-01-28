@@ -1,8 +1,8 @@
-import express from "express";
-import movieRoute from "./movie.route.js";
+const express = require("express");
+const movieRoute = require("./movie.route.js");
 
 const router = express.Router();
 
-router.use("/movie", movieRoute);
+router.use("/movies", movieRoute);
 
-export default router;
+module.exports = router;

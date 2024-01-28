@@ -1,0 +1,42 @@
+.movie-card{
+    background-color: black;
+    display: flex;
+}
+
+.movie-details{
+    display: flex;
+    margin-left: 100px;
+    justify-content: right;
+}
+
+.movie-card-frame{
+    margin-top: 30px;
+    justify-content: right;
+    margin-left: 200px;
+}
+
+.movie-card-poster{
+    width: 300px;
+    margin-right: 200px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    float: right;
+}
+
+.movie-card-review-container{
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+.movie-card-title{
+    margin-top: 30px;
+    font-size: 50px;
+    color: white;
+    margin-left: 0px;
+    font-style: bold;
+}
+
+.movie-card-review{
+    font-size: 15px;
+    color: white;
+}

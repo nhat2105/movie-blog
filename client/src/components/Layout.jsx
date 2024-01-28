@@ -17,7 +17,8 @@ const Layout = () => {
                         <Routes/>
                         </div>
                     </div>
-                <Footer/>
+                <Footer />
+                
             </div>
         </BrowserRouter>
     )

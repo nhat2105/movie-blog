@@ -4,10 +4,10 @@ const query = require('../axios/queries');
 
 router.get('/:movieId', async (req, res) => {
     const movieId = req.params.movieId;
-
     try {
-        const moviePost = await query.getMoviePost(movieId);
-        res.json(moviePost);
+        const movieDetail = await query.getMovieDetail(movieId);
+        res.json(movieDetail[0])
+
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });
     }

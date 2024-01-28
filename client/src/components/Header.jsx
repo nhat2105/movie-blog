@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-import logo from '../assets/images/components/logo.jpg'
+import logo from '../assets/images/components/logo1.png'
 
 const mainNav = [
     {

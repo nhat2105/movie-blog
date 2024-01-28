@@ -1,13 +1,13 @@
 .footer{
     display: flex;
-    background-image: url("../../assets/images/components/header_background.png");
+    background-color: black;
     justify-content: space-around;
-    align-items: center;
+    margin-right: 0px;
 }
 
 .footer-group {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 250px;
   }
   
   
@@ -23,16 +23,19 @@
     font-size: 16px;
     font-style: bold;
     font-weight: 400;
-    color: lightskyblue;
+    color: #20DD33;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .footer-content{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .footer_logo{
-    width: 20%;
-    margin-top: -10px;
+    width: 30%;
+}
+
+.include_logo{
+    margin-right: 0px;
 }

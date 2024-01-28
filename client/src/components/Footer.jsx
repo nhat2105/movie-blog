@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import logo from "../assets/images/components/logo.jpg"
+import logo from "../assets/images/components/logo1.png"
 import "../css/components/footer.css"
 
 const footerAboutLinks = [
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className='footer-group'>
-          <div className='footer-title'>Recommend Media</div>
+          <div className='footer-title'>Recommend</div>
           <div className='footer-content'>
             {footerRecommendLinks.map((item, index) => (
               <p key={index}>
@@ -62,13 +62,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='footer-group footer_about'>
+        <div className='footer-group footer_about include_logo'>
           <p>
             <Link to='/'>
               <img src={logo} className='footer_logo' alt='' />
             </Link>
           </p>
-          <p style={{ color: 'white' }}>Just a blog about movies @@
+          <p style={{ color: 'white' }}>Just a blog about movies @@. 
           </p>
         </div>
       </div>
