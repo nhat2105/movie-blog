@@ -9,7 +9,7 @@ const MovieCard = ( {title, id, poster, review} ) => {
       <div className="movie-details"> 
         <div className='movie-card-review-container'>
         <h1 className='movie-card-title'>{title}</h1>
-          <p style ={{fontSize: "25px", color: 'white', fontStyle: 'italic'}}>Mini Review</p>
+          <h2 style ={{fontSize: "25px", fontStyle: 'italic', color: '#20DD33'}}>Mini Review</h2>
           <p className='movie-card-review'>{review}</p>
         </div>
         <div className="movie-card-frame">

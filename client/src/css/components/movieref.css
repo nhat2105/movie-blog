@@ -1,0 +1,45 @@
+.movie-ref{
+    background-color: black;
+    display: flex;
+}
+
+.movie-ref-container{
+    margin-left: 100px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.movie-ref-image{
+    width: 70%;
+    margin: 0;
+}
+
+.movie-ref-content {
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  
+.swiper-container {
+  display: flex;
+  
+}
+  
+.swiper-slide {
+    width: auto;
+    display: flex;
+    flex-shrink: 0;
+    margin: 0;
+    justify-content: left;
+    align-items: center;
+}
+  
+.swiper-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-button-next{
+    height: 20px;
+    width: 10px;
+}

@@ -1,0 +1,40 @@
+.movie-gallery{
+    background-color: black;
+    display: flex;
+}
+
+.movie-gallery-container{
+    margin-left: 100px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.movie-gallery-image{
+    width: 75%;
+    margin: 0;
+}
+
+.movie-gallery-content {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+.swiper-container {
+  display: flex;
+}
+  
+.swiper-slide {
+    width: auto;
+    display: flex;
+    flex-shrink: 0;
+    margin: 0;
+}
+  
+.swiper-wrapper{
+    display: flex;
+}
+
+.swiper-button-next{
+    height: 20px;
+    width: 10px;
+}
