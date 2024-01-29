@@ -15,12 +15,6 @@ const MovieGallery = ({ urls }) => {
         },
       });
     }
-
-    return () => {
-      if (swiperRef.current) {
-        swiperRef.current.destroy();
-      }
-    };
   }, [urls]);
 
   return (

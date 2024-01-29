@@ -1,0 +1,28 @@
+.movie-desc{
+    background-color: black;
+    display: flex;
+}
+
+.movie-details{
+    display: flex;
+    margin-left: 100px;
+    justify-content: right;
+}
+
+.movie-desc-review-container{
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+.movie-desc-title{
+    margin-top: 30px;
+    font-size: 50px;
+    color: white;
+    margin-left: 0px;
+    font-style: bold;
+}
+
+.movie-desc-review{
+    font-size: 15px;
+    color: white;
+}

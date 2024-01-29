@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import MovieCard from '../components/MovieCard';
+import MovieDesc from '../components/MovieDescription';
 import MovieRef from '../components/MovieRef';
 import MovieGallery from '../components/MovieGallery';
 import apiMovie from '../api/movie.api'
@@ -35,7 +35,7 @@ const MoviePage = () => {
 
   return (
     <div>
-      {movieData && <MovieCard {...movieData} />}
+      {movieData && <MovieDesc {...movieData} />}
       {movieGallery.urls && <MovieGallery urls = {movieGallery.urls} />}
       {movieRef.urls && <MovieRef urls={movieRef.urls} />}
 

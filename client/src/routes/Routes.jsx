@@ -3,14 +3,16 @@ import {Routes as R, Route } from 'react-router-dom'
 
 import Main from '../pages/Main'
 import Movie from '../pages/Movie'
-import List  from '../pages/List'
+import Lists  from '../pages/Lists'
+import MovieList from '../components/MovieList'
 
 const Routes = () => {
   return (
         <R>
             <Route path='/' element={<Main />}/>
             <Route path='/movies/:movieId' element={<Movie/>}/>
-            <Route path='/list' element={<List/>}/>
+            <Route path='/lists' element={<Lists/>}/>
+            <Route path='/lists/:listId' element = {<MovieList />} />
         </R>
   )
 }
