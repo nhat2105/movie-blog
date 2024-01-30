@@ -7,8 +7,8 @@ const MovieGallery = ({ urls }) => {
   useEffect(() => {
     if (urls.length > 0) {
       swiperRef.current = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: -150,
+        slidesPerView: 3,
+        spaceBetween: 10,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -16,7 +16,6 @@ const MovieGallery = ({ urls }) => {
       });
     }
   }, [urls]);
-
   return (
     <div className='movie-gallery'>
       <div className='movie-gallery-container'>

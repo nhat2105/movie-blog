@@ -3,7 +3,6 @@ import MovieCard from './MovieCard'
 
 //items: list of movies containing mid and poster as attributes
 const MovieList = ({items}) => {
-
     return (
         <div className='movie-list'>
             <div className="movie-list-container">

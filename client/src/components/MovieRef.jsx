@@ -7,8 +7,8 @@ const MovieRef = ({ urls }) => {
   useEffect(() => {
     if (urls.length > 0) {
       swiperRef.current = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: -150,
+        slidesPerView: '3',
+        spaceBetween: 10,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -23,13 +23,13 @@ const MovieRef = ({ urls }) => {
         <h2 style={{ fontSize: '25px', fontStyle: 'italic', color: '#20DD33' }}>
           Recommended Media
         </h2>
-        <div className='swiper-container movie-ref-content'>
-          <div className='swiper-wrapper'>
+        <div className='swiper-ref-container movie-ref-content'>
+          <div className='swiper-ref-wrapper'>
             {urls.map((item, index) => (
               <div className='swiper-slide' key={index}>
                 <a href={item.url} target='_blank' rel="noreferrer">
                   <img className='movie-ref-image' src={item.poster} alt='' />
-                  <p style={{color: 'white', fontSize: '18px', marginLeft: '300px'}}>{item.rid}</p>
+                  <p style={{color: 'white', fontSize: '18px', marginLeft: '80px'}}>{item.rid}</p>
                 </a>
               </div>
             ))}

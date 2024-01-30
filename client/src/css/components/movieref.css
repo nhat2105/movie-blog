@@ -10,33 +10,28 @@
 }
 
 .movie-ref-image{
-    width: 70%;
-    margin: 0;
+    width: 410px;
+    margin-right: 10px;
 }
 
 .movie-ref-content {
     width: 100%;
     overflow: hidden;
-    
   }
   
-.swiper-container {
-  display: flex;
-  
+.swiper-ref-container {
+    display: flex;
 }
   
 .swiper-slide {
-    width: auto;
     display: flex;
     flex-shrink: 0;
     margin: 0;
-    justify-content: left;
-    align-items: center;
+    max-width: 100%;
 }
   
-.swiper-wrapper{
+.swiper-ref-wrapper{
     display: flex;
-    justify-content: center;
 }
 
 .swiper-button-next{

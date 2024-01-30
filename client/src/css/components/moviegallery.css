@@ -10,8 +10,8 @@
 }
 
 .movie-gallery-image{
-    width: 75%;
-    margin: 0;
+    max-width: 410px;
+    margin-right: 10px;
 }
 
 .movie-gallery-content {
@@ -20,14 +20,14 @@
   }
   
 .swiper-container {
-  display: flex;
+    display: flex;
 }
   
 .swiper-slide {
-    width: auto;
     display: flex;
     flex-shrink: 0;
     margin: 0;
+    max-width: 100%;
 }
   
 .swiper-wrapper{
