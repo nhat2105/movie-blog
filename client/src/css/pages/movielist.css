@@ -1,0 +1,25 @@
+.movie-list {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.movie-list-container {
+    color: white;
+}
+
+.movie-list-item {
+    justify-content: center;
+}
+
+.movie-list-title{
+    font-size: 35px;
+    color: #20DD33;
+
+}
+
+.movie-list-desc{
+    font-size: 20px;
+}

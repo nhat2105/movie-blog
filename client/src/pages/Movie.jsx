@@ -22,7 +22,7 @@ const MoviePage = () => {
         
         const ref = await apiMovie({movieId, code: "ref"});
         setMovieRef(ref);
-        console.log("gallery returned" + JSON.stringify(ref.urls));    
+         
 
       } catch (error) {
         console.error('Error fetching movie data:', error);

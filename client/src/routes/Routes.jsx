@@ -4,7 +4,7 @@ import {Routes as R, Route } from 'react-router-dom'
 import Main from '../pages/Main'
 import Movie from '../pages/Movie'
 import Lists  from '../pages/Lists'
-import MovieList from '../components/MovieList'
+import MovieList from '../pages/MovieList'
 
 const Routes = () => {
   return (

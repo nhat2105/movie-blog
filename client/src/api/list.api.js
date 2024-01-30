@@ -14,12 +14,7 @@ const fetchListData = async (listId) => {
 
 const apiList = async ({listId}) => {
     try {
-        const urls = await fetchListData(listId);
-        //should return a list of mids and posters
-        const mids = urls.mid;
-        const posters = urls.poster;
-        return {mids, posters};
-
+      return await fetchListData(listId);
     } catch (error) {
       console.error('Error in apiList:', error);
     }

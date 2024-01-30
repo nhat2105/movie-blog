@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const query = require('../axios/queries');
+const query = require('../axios/movie.queries');
 
 //Movie Description (to movie page)
 router.get('/:movieId', async (req, res) => {

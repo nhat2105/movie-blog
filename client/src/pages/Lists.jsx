@@ -1,14 +1,10 @@
-import React, { useState } from 'react'
-import MovieList from '../components/MovieList'
-import { useParams } from 'react-router-dom';
+import React from 'react'
 
 const Lists = () => {
-  const { listId } = useParams();
-  const [listData, setListData] = useState(null);
 
   return (
     <div>
-      {listData && <MovieList items = {listData.lid} />}
+      A Bunch of Lists i.e year end lists, compilations should be here
     </div>
   )
 }
