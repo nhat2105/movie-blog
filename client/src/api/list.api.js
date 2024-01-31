@@ -12,6 +12,16 @@ const fetchListData = async (listId) => {
   }
 };
 
+const apiAllLists= async () => {
+  try {
+    const response = await axios.get(`${base_url}/lists/`);
+    return response.data; 
+  } catch (error) {
+    console.error('Error fetching list data:', error.message);
+    throw error;
+  }
+};
+
 const apiList = async ({listId}) => {
     try {
       return await fetchListData(listId);
@@ -20,5 +30,4 @@ const apiList = async ({listId}) => {
     }
 };
 
-
-export default apiList;
+export {apiList, apiAllLists };

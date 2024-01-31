@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MovieCard from '../components/MovieCard';
-import { useParams, Link } from 'react-router-dom';
-import apiList from '../api/list.api';
-import { Grid } from '@mui/material';
-
+import { useParams } from 'react-router-dom';
+import { apiList } from '../api/list.api';
 
 const MovieList = () => {
     const { listId } = useParams();
@@ -25,17 +23,16 @@ const MovieList = () => {
     return (
         <div className='movie-list'>
             <div className="movie-list-container">
-            <h1 className='movie-list-title'>{listData && listData[0].title}</h1>
-            <h2 className='movie-list-desc'>{listData && listData[0].description}</h2>
-            <Grid container spacing={10}>
-                {listData && listData.map((item, index) => (
-                    <Grid item key={index} xs={3} sm={3} md={3} lg={3}>
-                        <Link to={`/movies/${item.mid}`} key={index}>
+                <h1 className='movie-list-title'>{listData && listData[0].title}</h1>
+                <h2 className='movie-list-desc'>{listData && listData[0].description}</h2>
+                <div className='movie-cards-list-container'>
+                    {listData && listData.map((item, index) => (
+                        <div key={index} className='movie-card-list-wrapper'>
                             <MovieCard id={item.mid} poster={item.poster} />
-                        </Link>
-                    </Grid>
-                ))}
-            </Grid>
+                            <h3 style={{marginLeft: "150px", marginTop: "0px"}}>{item.item_id}</h3>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

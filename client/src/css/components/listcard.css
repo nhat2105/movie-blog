@@ -1,0 +1,21 @@
+.list-card{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.list-card-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 60px;
+}
+
+.list-card-wrapper{
+    display: flex;
+    text-align: center;
+}
+
+.list-card-img{
+    max-width: 400px;
+}

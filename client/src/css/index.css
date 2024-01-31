@@ -4,8 +4,12 @@
 @import url("./components/moviegallery.css");
 @import url("./components/moviecard.css");
 @import url("./components/movieref.css");
+@import url("./components/listslogo.css");
+@import url("./components/listcard.css");
 
 @import url("./pages/main.css");
+@import url("./pages/lists.css");
 @import url("./pages/movielist.css");
+
 
 

@@ -1,8 +1,6 @@
 .movie-list {
     display: flex;
     background-color: black;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -11,15 +9,31 @@
 }
 
 .movie-list-item {
-    justify-content: center;
+
 }
 
-.movie-list-title{
+.movie-list-title {
     font-size: 35px;
     color: #20DD33;
-
 }
 
-.movie-list-desc{
+.movie-list-desc {
     font-size: 20px;
+}
+
+.movie-cards-list-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-card-list-wrapper {
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-right: 0%;
+    
+}
+
+.movie-card-list-wrapper img {
+    width: 230px; 
+    height: auto; 
 }

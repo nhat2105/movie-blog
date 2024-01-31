@@ -11,7 +11,7 @@ const Routes = () => {
         <R>
             <Route path='/' element={<Main />}/>
             <Route path='/movies/:movieId' element={<Movie/>}/>
-            <Route path='/lists' element={<Lists/>}/>
+            <Route path='/lists/' element={<Lists/>}/>
             <Route path='/lists/:listId' element = {<MovieList />} />
         </R>
   )
