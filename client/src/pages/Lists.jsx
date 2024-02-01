@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import ListsLogo from '../components/ListsLogo'
 import { apiAllLists } from '../api/list.api'
 import ListCard from '../components/ListCard'
+import intro from "../assets/images/components/lists_bottom.png"
 
 const Lists = () => {
   const [allLists, setAllLists] = useState([]);
@@ -23,9 +24,8 @@ const Lists = () => {
   return (
     <div className='lists'>
       <ListsLogo />
-      <div className='lists-intro-container'>
-        <p className='lists-intro-text'>FELICE COMPILATIONS contain movies lists that we'd like to share</p>
-      </div> 
+      <img src={intro} alt='' width='100%'></img>
+      
       <div className='lists-list-card-wrapper'>
         {allLists.map((list) => (
           <ListCard list={list}/>

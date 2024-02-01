@@ -10,16 +10,13 @@ import Routes from '../routes/Routes'
 const Layout = () => {
     return (
         <BrowserRouter>
-            <div> 
-                <Header/>
-                    <div className='container'>
-                        <div className='main'>
-                        <Routes/>
-                        </div>
+            <Header/>
+                <div className='container'>
+                    <div className='main'>
+                    <Routes/>
                     </div>
-                <Footer />
-                
-            </div>
+                </div>
+            <Footer />
         </BrowserRouter>
     )
 }

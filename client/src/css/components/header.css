@@ -9,7 +9,13 @@
     }
 }
 
+.header-active {
+    background-color: #20DD33; 
+}
 
+.container-active {
+    background-color: #20DD33;
+}
 
 .header_logo{
     width: 100%;
