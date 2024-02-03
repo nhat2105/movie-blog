@@ -6,10 +6,12 @@
 @import url("./components/movieref.css");
 @import url("./components/listslogo.css");
 @import url("./components/listcard.css");
+@import url("./components/postcard.css");
 
 @import url("./pages/main.css");
 @import url("./pages/lists.css");
 @import url("./pages/movielist.css");
+@import url("./pages/moviepost.css");
 
 
 
