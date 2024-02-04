@@ -23,6 +23,16 @@ const fetchMovieShotData = async (movieId) => {
   }
 };
 
+const apiAllMovies = async () => {
+  try {
+    const response = await axios.get(`${base_url}/collection`);
+    return response.data; 
+  } catch (error) {
+    console.error('Error fetching all movies data:', error.message);
+    throw error;
+  }
+};
+
 const fetchMovieRefData = async (movieId) => {
   try {
     const response = await axios.get(`${base_url}/movies/${movieId}/ref`);
@@ -59,4 +69,4 @@ const apiMovie = async ({movieId, code}) => {
 };
 
 
-export default apiMovie;
+export {apiMovie, apiAllMovies};

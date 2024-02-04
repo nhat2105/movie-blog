@@ -5,7 +5,7 @@ const ListCard = ({list}) => {
   return (
     <div className='list-card'>
       <div className="list-card-container">
-        <div className= 'list-card-wrapper' key={list.lid}>
+        <div className= 'list-card-wrapper'>
             <Link to={`/lists/${list.lid}`} >
                 <h1 style={{color:'white'}}>{list.title}</h1>
                 <img className= 'list-card-img' src={list.poster} alt='' />

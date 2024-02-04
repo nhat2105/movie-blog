@@ -6,7 +6,8 @@ const mainNav = [
     { display: 'HOME', path: '/' },
     { display: 'POSTS', path: '/posts' },
     { display: 'LISTS', path: '/lists' },
-    { display: 'ABOUT', path: '/about' }
+    { display: 'COLLECTION', path: '/collection'},
+    { display: 'ABOUT', path: '/about' },
 ];
 
 const Header = () => {
@@ -26,6 +27,7 @@ const Header = () => {
                         <img className="logo_img" src={logo} alt="" />
                     </Link>
                 </div>
+                
                 <div className="header_menu">
                     {mainNav.map((item, index) => (
                         <div className="header_menu_item" key={index}>

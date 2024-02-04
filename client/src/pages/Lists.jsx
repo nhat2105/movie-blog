@@ -23,8 +23,8 @@ const Lists = () => {
 
   return (
     <div className='lists'>
-      <ListsLogo />
-      <img src={intro} alt='' width='100%'></img>
+      <ListsLogo text ="COMPILATIONS"/>
+      <img src={intro} alt='' width='100%' />
       <div className='lists-list-card-wrapper'>
         {allLists.map((list) => (
           <ListCard list={list}/>

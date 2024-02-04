@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MovieDesc from '../components/MovieDescription';
 import MovieRef from '../components/MovieRef';
 import MovieGallery from '../components/MovieGallery';
-import apiMovie from '../api/movie.api'
+import {apiMovie} from '../api/movie.api'
 import { useParams } from 'react-router-dom';
 
 const MoviePage = () => {
