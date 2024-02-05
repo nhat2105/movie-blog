@@ -19,9 +19,9 @@ const Header = () => {
 
     return (
         <div className={`header ${activeLink !== '/' &&
-        activeLink !== '/lists' ? 'header-active' : ''}`}>
+        activeLink !== '/lists' && activeLink !== '/collection'? 'header-active' : ''}`}>
             <div className={`container ${activeLink !== '/' && 
-            activeLink !== '/lists' ? 'container-active' : ''}`}>
+            activeLink !== '/lists' && activeLink !== '/collection'? 'container-active' : ''}`}>
                 <div className="header_logo">
                     <Link to="/" onClick={() => handleLinkClick('/')}>
                         <img className="logo_img" src={logo} alt="" />
@@ -33,7 +33,7 @@ const Header = () => {
                         <div className="header_menu_item" key={index}>
                             <Link to={item.path} style={{textDecoration: "none"}} onClick={() => handleLinkClick(item.path)}>
                                 <span style={{ color: activeLink !== '/' && 
-                                    activeLink !== '/lists'  ? 'black' : 'white' }}>
+                                    activeLink !== '/lists' && activeLink !== '/collection' ? 'black' : 'white' }}>
                                     {item.display}
                                 </span>
                             </Link>
