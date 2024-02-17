@@ -16,7 +16,7 @@ module.exports = {
     //movie id, movie poster, movie title
     getPostDetail: (postId) => { 
         return new Promise((resolve, reject) => {
-        const q = `SELECT p.type, p.description, p.rating, m.poster, m.mid, m.title, ps.scene_one, ps.scene_two
+        const q = `SELECT p.type, p.description, p.spoiler, m.poster, m.mid, m.title, ps.scene_one, ps.scene_two
             FROM movie m, post_scenes ps, post p WHERE p.pid = ? and m.mid = p.mid and ps.pid = p.pid`
             
         db.query(q, [postId], (error, results) => {

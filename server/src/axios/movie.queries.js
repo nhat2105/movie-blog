@@ -3,7 +3,7 @@ const db = require('./connection.js')
 module.exports = {
   getMovieDetail: (movieId) => { 
     return new Promise((resolve, reject) => {
-      const q = 'SELECT * FROM movie WHERE mid = ?'
+      const q = 'SELECT * FROM movie, review WHERE movie.mid = ? and movie.rid = review.rid'
       db.query(q, [movieId], (error, results) => {
           if (error) reject(error);
           else resolve(results);

@@ -36,7 +36,7 @@ const MoviePost = () => {
                 {postData && <MovieCard id={postData.mid} poster={postData.poster} />}
                 <div className='movie-post-introduction'>
                     {postData && <h1 className='movie-post-type' style={{ color:'#20DD33'}}>POST TYPE: <span style={{ color:'white'}}>{postData.type}</span></h1>}
-                    {postData && <h1 className='movie-post-type' style={{ color:'#20DD33'}}>RATING: <span style={{ color:'white'}}>{postData.rating}</span></h1>}
+                    {postData && <h1 className='movie-post-type' style={{ color:'#20DD33'}}>SPOILER: <span style={{ color:'white'}}>{postData.spoiler}</span></h1>}
 
                 </div>
             </div>

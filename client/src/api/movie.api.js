@@ -48,10 +48,11 @@ const apiMovie = async ({movieId, code}) => {
       if (code === "description"){
         const movieData = await fetchMovieData(movieId);
         const title = movieData.title
-        const review = movieData.review
+        const review = movieData.description
         const poster = movieData.poster
+        const rating = movieData.rating
         const id = movieId
-        return { title, review, poster, id};
+        return { title, review, poster, id, rating};
       }
       else if (code === "gallery"){
         const urls = await fetchMovieShotData(movieId);

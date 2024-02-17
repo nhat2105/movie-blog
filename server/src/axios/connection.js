@@ -5,9 +5,9 @@ const db = sql.createConnection({
     user:"root",
     database: "movies",
     password: "",
-    port: 3306 
+    port: 3306
 })
-
+ 
 db.connect((error) => {
     if (error)console.log("Cannot connect to database");
     else {console.log("Succesfully connected to db")}
