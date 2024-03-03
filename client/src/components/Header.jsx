@@ -7,7 +7,6 @@ const mainNav = [
     { display: 'POSTS', path: '/posts' },
     { display: 'LISTS', path: '/lists' },
     { display: 'COLLECTION', path: '/collection'},
-    { display: 'ABOUT', path: '/about' },
 ];
 
 const Header = () => {
